@@ -1,14 +1,13 @@
 ﻿# Práctica-web-2
- ------------------------------------------------------
+
  Autor(es):Aleida Rodriguez
  Última Actualizacion: Sep-2023
---------------------------------------------------------------------
+
 Contenido
   *Resumen
   *Intalación
   *Dependicias Usadas
   *Links
---------------------------------------------------------------------
 
 ## Desarrollo de dashboard que es página web que contiene 3 secciones:
   *Home 
