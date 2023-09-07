@@ -1,4 +1,4 @@
-﻿# Práctica-web-2
+﻿# Dashboard
 
  Autor(es): Aleida Rodriguez
  
