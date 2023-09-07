@@ -17,6 +17,7 @@ module.exports = {
       primary: "#d19793",
       secondary: "#EFD9D1",
       terciary: "#AD8E85",
+      fondo: "#e6ccb2",
     },
   },
   plugins: [],

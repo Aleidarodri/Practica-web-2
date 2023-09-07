@@ -3,23 +3,38 @@ import { Pacifico } from "next/font/google";
 
 const pacifico = Pacifico({ subsets: ["latin"], weight: ["400"] });
 
+//make the routes
 const menuRoutes = [
-  { ruta: "/", nombre: "°Inicio" },
-  { ruta: "/about", nombre: " °Acerca de" },
-  { ruta: "/composicion", nombre: "  °Composición corporal" },
+  {
+    ruta: "/",
+    nombre: " Home",
+  },
+  {
+    ruta: "/about",
+    nombre: "About me",
+  },
+
+  {
+    ruta: "/corporal",
+    nombre: "Body",
+  },
 ];
-//menu de opciones
+
+//use the routes
 function Menu() {
   return (
-    <div className=" bg-terciary  h-screen  ">
+    <div className="w-[20%] bg-primary   border-tertiary">
       <h1
-        className={`text-center text-xl  m-10 text-#d19793 ${pacifico.className}`}
+        className={`pb-2 p-10   text-center text-4xl text-2xl  ${pacifico.className}`}
       >
-        Menú
+        Menu
       </h1>
       <ol>
         {menuRoutes.map((menu, index) => (
-          <li key={index}>
+          <li
+            className={`pt-2 pb-2   text-center   hover:bg-secondary `}
+            key={index}
+          >
             <Link href={menu.ruta}>{menu.nombre}</Link>
           </li>
         ))}
