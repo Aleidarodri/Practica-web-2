@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import { Chart } from "chart.js/auto";
 
+// A React component for rendering a pie chart based on percentage data.
+
 export const ChartComp = ({ porcentajes }) => {
   const chartRef = useRef(null);
 
@@ -9,12 +11,15 @@ export const ChartComp = ({ porcentajes }) => {
       porcentajes;
     //console.log("Valores de porcentajes:", bodyFat, boneMassPercentage, residualMassPercentage, muscleMass);
 
+    // Get the canvas element by its ID
     const ctx = document.getElementById("chartComp");
 
+    // Destroy the existing chart instance to prevent memory leaks
     if (chartRef.current) {
       chartRef.current.destroy();
     }
 
+    // Create a new pie chart using Chart.js
     const newChart = new Chart(ctx, {
       type: "pie",
       data: {
@@ -41,6 +46,7 @@ export const ChartComp = ({ porcentajes }) => {
       },
     });
 
+    // Store the chart instance in the ref for future reference
     chartRef.current = newChart;
   }, [porcentajes]);
 

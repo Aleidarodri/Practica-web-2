@@ -219,7 +219,6 @@ export default (About) => {
             <Inputs value={formData.femur} onChange={handleData} name="femur" />
           </div>
         </div>{" "}
-        {/*finish of the div that is for the inputs for the text that goes along with them*/}
         <div className="flex justify-center">
           {" "}
           {/*button*/}

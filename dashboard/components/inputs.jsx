@@ -1,5 +1,6 @@
 import React from "react";
 
+//Functional component representing an input element.
 function Inputs({ value, onChange, name }) {
   return (
     <input
