@@ -3,13 +3,13 @@
  Autor(es):Aleida Rodriguez
  Última Actualizacion: Sep-2023
 
-#Contenido
+##Contenido
   *Resumen
   *Intalación
   *Dependicias Usadas
   *Links
 
-#Desarrollo de dashboard que es página web que contiene 3 secciones:
+##Desarrollo de dashboard que es página web que contiene 3 secciones:
   *Home 
     *Donde es la página principal, la primera que ve en usuario al correr el programa
   *About me
@@ -20,11 +20,7 @@
   
 
 
-
-
-
--------------------------------------------------------------------------------
-Requerimientos para poder usarlo 
+##Requerimientos para poder usarlo 
 
 En consola poner el comandó:
     *npm install 
