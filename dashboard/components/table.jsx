@@ -11,7 +11,7 @@ function Table(props) {
     muscleMass,
     muscleMassKg,
   } = props;
-  // Render a table with specific styling classes
+  
   return (
     <table className="text-sm text-left text-tertiary bg-[white]">
       <thead className="text-xs text-gray-700 uppercase bg-[#ff99ac] md-5">

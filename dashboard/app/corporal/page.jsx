@@ -1,5 +1,5 @@
 "use client";
-import { Noto_Serif, Outfit } from "next/font/google";
+
 import { Pacifico } from "next/font/google";
 
 import React, { useState } from "react";
@@ -7,8 +7,6 @@ import { ChartComp } from "../../components/ChartComp.jsx";
 import Inputs from "../../components/inputs.jsx";
 import Table from "../../components/table.jsx";
 
-const Noto = Noto_Serif({ subsets: ["latin"], weight: "400" });
-const outfit = Outfit({ subsets: ["latin"], weight: "300" });
 const pacifico = Pacifico({ subsets: ["latin"], weight: ["400"] });
 
 export default (About) => {
@@ -126,9 +124,7 @@ export default (About) => {
           content="width=device-width, initial-scale=1.0"
         >
           <div className="text-center ">
-            <h3
-              className={`mt-3 text-center text-lg ${outfit.className} text-tertiary`}
-            >
+            <h3 className={`mt-3 text-center text-lg  text-tertiary`}>
               Género
             </h3>
             <select
@@ -143,7 +139,7 @@ export default (About) => {
               <option value="woman">Mujer</option>
             </select>
             <h3
-              className={`mt-3 text-center text-lg ${outfit.className} text-tertiary`}
+              className={`mt-3 text-center text-lg  text-tertiary`}
               name="viewport"
               content="width=device-width, initial-scale=1.0"
             >
@@ -154,9 +150,7 @@ export default (About) => {
               onChange={handleData}
               name="weight"
             />
-            <h3
-              className={`mt-3 text-center text-lg ${outfit.className} text-tertiary`}
-            >
+            <h3 className={`mt-3 text-center text-lg  text-tertiary`}>
               Altura(cm)
             </h3>
             <Inputs
@@ -164,15 +158,9 @@ export default (About) => {
               onChange={handleData}
               name="height"
             />
-            <h3
-              className={`mt-3 text-center text-lg ${outfit.className} text-tertiary`}
-            >
-              Edad
-            </h3>
+            <h3 className={`mt-3 text-center text-lg  text-tertiary`}>Edad</h3>
             <Inputs value={formData.age} onChange={handleData} name="age" />
-            <h3
-              className={`mt-3 text-center text-lg ${outfit.className} text-tertiary`}
-            >
+            <h3 className={`mt-3 text-center text-lg  text-tertiary`}>
               Biestilodeo(cm)
             </h3>
             <Inputs
@@ -183,9 +171,7 @@ export default (About) => {
           </div>
 
           <div className="text-center">
-            <h3
-              className={`mt-3 text-center text-lg ${outfit.className} text-tertiary`}
-            >
+            <h3 className={`mt-3 text-center text-lg  text-tertiary`}>
               Bicipital(cm)
             </h3>
             <Inputs
@@ -193,9 +179,7 @@ export default (About) => {
               onChange={handleData}
               name="bicipital"
             />
-            <h3
-              className={`mt-3 text-center text-lg ${outfit.className} text-tertiary`}
-            >
+            <h3 className={`mt-3 text-center text-lg  text-tertiary`}>
               Tricipital(cm)
             </h3>
             <Inputs
@@ -203,9 +187,7 @@ export default (About) => {
               onChange={handleData}
               name="tricipital"
             />
-            <h3
-              className={`mt-3 text-center text-lg ${outfit.className} text-tertiary`}
-            >
+            <h3 className={`mt-3 text-center text-lg  text-tertiary`}>
               Subescapular(cm)
             </h3>
             <Inputs
@@ -213,9 +195,7 @@ export default (About) => {
               onChange={handleData}
               name="subscapular"
             />
-            <h3
-              className={`mt-3 text-center text-lg ${outfit.className} text-tertiary`}
-            >
+            <h3 className={`mt-3 text-center text-lg  text-tertiary`}>
               Suprailiaco(cm)
             </h3>
             <Inputs
@@ -223,9 +203,7 @@ export default (About) => {
               onChange={handleData}
               name="suprailiac"
             />
-            <h3
-              className={`mt-3 text-center text-lg ${outfit.className} text-tertiary `}
-            >
+            <h3 className={`mt-3 text-center text-lg text-tertiary `}>
               Femur(cm)
             </h3>
             <Inputs value={formData.femur} onChange={handleData} name="femur" />
@@ -264,7 +242,7 @@ export default (About) => {
           {/*chart*/}
           <ChartComp porcentajes={formData} />
         </div>
-        {/*End of the chart */}
+        {/*End  the chart */}
       </form>
     </div>
   );
