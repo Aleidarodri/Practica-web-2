@@ -39,11 +39,11 @@ Con esto se instalaran las dependencias necesarias y para la gráfica tiene que 
   - react-dom: "18.2.0",
   - tailwindcss: "3.3.3"
 - Dev Dependencias:
-  - vitest": "^0.34.3"
+  - vitest: "^0.34.3"
 
 ## Conoce más en:
   - [Tailwind](https://tailwindcss.com/)
-  - [Chartjs](https://www.chartjs.org/)
+  - [Chart.js](https://www.chartjs.org/)
   - [Node](https://nodejs.org/es)
 
 
