@@ -26,7 +26,8 @@ Pagina Muestra con Vercel:
 
 ## Requerimientos para poder usarlo 
 En consola poner el comandó:
-    - npm install 
+ - npm install
+   
 Con esto se instalaran las dependencias necesarias y para la gráfica tiene que ser el commando:
     - npm install chart.js
 - Depencias:
