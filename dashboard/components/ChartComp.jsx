@@ -11,7 +11,6 @@ export const ChartComp = ({ porcentajes }) => {
   useEffect(() => {
     const { bodyFat, boneMassPercentage, residualMassPercentage, muscleMass } =
       porcentajes;
-    //console.log("Valores de porcentajes:", bodyFat, boneMassPercentage, residualMassPercentage, muscleMass);
 
     // Get the canvas element by its ID
     const ctx = document.getElementById("chartComp");
