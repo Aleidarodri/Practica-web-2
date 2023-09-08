@@ -13,11 +13,11 @@ function Table(props) {
   } = props;
   // Render a table with specific styling classes
   return (
-    <table className="text-sm text-left text-tertiary bg-fondo">
-      <thead className="text-xs text-gray-700 uppercase bg-terciary">
+    <table className="text-sm text-left text-tertiary bg-[white]">
+      <thead className="text-xs text-gray-700 uppercase bg-[#ff99ac] md-5">
         <tr className="border-a ">
           <th scope="col" className="px-6">
-            Component
+            Datos
           </th>
           <th scope="col" className="px-6">
             %
@@ -30,28 +30,28 @@ function Table(props) {
       <tbody>
         <tr className=" border-a">
           <th scope="row" className="px-6 font-medium">
-            Body Fat
+            Masa Grasa
           </th>
           <td className="px-6">{bodyFat}</td>
           <td className="px-6">{bodyFatKg}</td>
         </tr>
         <tr className=" border-a">
           <th scope="row" className="px-6 font-medium">
-            Bone Mass
+            Masa Ósea
           </th>
           <td className="px-6">{boneMassPercentage}</td>
           <td className="px-6">{boneMass}</td>
         </tr>
         <tr className=" border-a">
           <th scope="row" className="px-6 font-medium">
-            Residual Mass
+            Masa Residual
           </th>
           <td className="px-6">{residualMassPercentage}</td>
           <td className="px-6">{residualMass}</td>
         </tr>
         <tr className="border-a">
           <th scope="row" className="px-6 font-medium">
-            Muscle Mass
+            Masa Muscular
           </th>
           <td className="px-6">{muscleMass}</td>
           <td className="px-6">{muscleMassKg}</td>

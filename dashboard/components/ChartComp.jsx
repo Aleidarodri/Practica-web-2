@@ -20,7 +20,7 @@ export const ChartComp = ({ porcentajes }) => {
 
     // Create a new pie chart using Chart.js
     const newChart = new Chart(ctx, {
-      type: "pie",
+      type: "doughnut",
       data: {
         labels: ["Masa grasa", "Masas ósea", "Masa residual", "Masa muscular"],
         datasets: [
@@ -32,6 +32,7 @@ export const ChartComp = ({ porcentajes }) => {
               residualMassPercentage,
               muscleMass,
             ],
+            backgroundColor: ["#f7cad0", "#ff99ac", "#ff7096", "#ff477e"],
             borderWidth: 2,
           },
         ],

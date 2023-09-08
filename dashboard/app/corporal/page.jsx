@@ -237,7 +237,7 @@ export default (About) => {
           <input
             className="mt-4 border-2 rounded-2xl text-tertiary border-terciary p-4 font-bold bg-terciary hover:bg-primary"
             type="submit"
-            value={"calculate"}
+            value={"Calcular"}
             onClick={calculatedensity}
           />
         </div>{" "}
