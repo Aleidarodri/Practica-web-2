@@ -105,21 +105,31 @@ export default (About) => {
     });
   }; //end of what we use to calculate all the data
   return (
-    <div className="bg-secondary w-full">
+    <div
+      className="bg-secondary w-full"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    >
       <h1
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
         className={` bg-terciary p-3 text-center text-3xl ${pacifico.className} text-tertiary`}
       >
-        Body composition
+        Composición Corporal
       </h1>
 
       <form onSubmit={hadleSubmit} action="">
         {/*this div is for the inputs for the text that goes along with them*/}
-        <div className="flex items-center  bg-[#e5cdc8] justify-center mx-auto gap-16 border-2 pb-4 mt-5 rounded-2xl max-w-prose border-tertiary">
+        <div
+          className=" flex items-center  bg-[#e5cdc8] justify-center mx-auto gap-16 border-2 pb-4 mt-5 rounded-2xl max-w-prose border-tertiary"
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+        >
           <div className="text-center ">
             <h3
               className={`mt-3 text-center text-lg ${outfit.className} text-tertiary`}
             >
-              Gender
+              Género
             </h3>
             <select
               className="rounded-xl pl-2 pr-2 w-full pt-1 pb-1"
@@ -128,14 +138,16 @@ export default (About) => {
               value={formData.Gender}
               onChange={(e) => handleData(e.target.name, e.target.value)}
             >
-              <option>Choose your Gender</option>
-              <option value="man">Man</option>
-              <option value="woman">Woman</option>
+              <option>Seleccionar</option>
+              <option value="man">Hombre</option>
+              <option value="woman">Mujer</option>
             </select>
             <h3
               className={`mt-3 text-center text-lg ${outfit.className} text-tertiary`}
+              name="viewport"
+              content="width=device-width, initial-scale=1.0"
             >
-              Weight
+              Peso(kg)
             </h3>
             <Inputs
               value={formData.weight}
@@ -145,7 +157,7 @@ export default (About) => {
             <h3
               className={`mt-3 text-center text-lg ${outfit.className} text-tertiary`}
             >
-              Height
+              Altura(cm)
             </h3>
             <Inputs
               value={formData.height}
@@ -155,13 +167,13 @@ export default (About) => {
             <h3
               className={`mt-3 text-center text-lg ${outfit.className} text-tertiary`}
             >
-              Age
+              Edad
             </h3>
             <Inputs value={formData.age} onChange={handleData} name="age" />
             <h3
               className={`mt-3 text-center text-lg ${outfit.className} text-tertiary`}
             >
-              Biceps Skinfold
+              Biestilodeo(cm)
             </h3>
             <Inputs
               value={formData.bicepsSkinfold}
@@ -174,7 +186,7 @@ export default (About) => {
             <h3
               className={`mt-3 text-center text-lg ${outfit.className} text-tertiary`}
             >
-              Bicipital
+              Bicipital(cm)
             </h3>
             <Inputs
               value={formData.bicipital}
@@ -184,7 +196,7 @@ export default (About) => {
             <h3
               className={`mt-3 text-center text-lg ${outfit.className} text-tertiary`}
             >
-              Tricipital
+              Tricipital(cm)
             </h3>
             <Inputs
               value={formData.tricipital}
@@ -194,7 +206,7 @@ export default (About) => {
             <h3
               className={`mt-3 text-center text-lg ${outfit.className} text-tertiary`}
             >
-              Subscapular
+              Subescapular(cm)
             </h3>
             <Inputs
               value={formData.subscapular}
@@ -204,7 +216,7 @@ export default (About) => {
             <h3
               className={`mt-3 text-center text-lg ${outfit.className} text-tertiary`}
             >
-              Suprailiac
+              Suprailiaco(cm)
             </h3>
             <Inputs
               value={formData.suprailiac}
@@ -214,7 +226,7 @@ export default (About) => {
             <h3
               className={`mt-3 text-center text-lg ${outfit.className} text-tertiary `}
             >
-              Femur
+              Femur(cm)
             </h3>
             <Inputs value={formData.femur} onChange={handleData} name="femur" />
           </div>
@@ -231,14 +243,6 @@ export default (About) => {
         </div>{" "}
         {/*button*/}
         <div className="flex flex-row justify-center gap-16">
-          {/* this div is for joining the table and the result table */}
-          <div className="p-2 bg-tertiary w-72 mt-5 rounded-xl  h-auto">
-            {console.log("Valores de porcentajes:", formData.density)}
-            <p>Body density: {formData.density}</p>
-            <p>Body Fat: {formData.bodyFat}</p>
-            <p>Bone Mass {formData.boneMass}</p>
-            <p>Residual mass: {formData.residualMass}</p>
-          </div>
           <div className="mt-5 border-2 rounded-xl border-terciary">
             {" "}
             {/*table */}

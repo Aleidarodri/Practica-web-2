@@ -7,23 +7,27 @@ const pacifico = Pacifico({ subsets: ["latin"], weight: ["400"] });
 const menuRoutes = [
   {
     ruta: "/",
-    nombre: " Home",
+    nombre: " Inicio",
   },
   {
     ruta: "/about",
-    nombre: "About me",
+    nombre: "Acerca de mi",
   },
 
   {
     ruta: "/corporal",
-    nombre: "Body",
+    nombre: "Composición Corporal",
   },
 ];
 
 //use the routes
 function Menu() {
   return (
-    <div className="w-[20%] bg-primary   border-tertiary">
+    <div
+      className="w-[20%] bg-primary   border-tertiary  "
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    >
       <h1
         className={`pb-2 p-10   text-center text-4xl text-2xl  ${pacifico.className}`}
       >

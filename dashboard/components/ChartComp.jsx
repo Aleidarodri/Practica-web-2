@@ -25,7 +25,7 @@ export const ChartComp = ({ porcentajes }) => {
         labels: ["Masa grasa", "Masas ósea", "Masa residual", "Masa muscular"],
         datasets: [
           {
-            label: "Porcentaje respecto al peso",
+            label: "Porcentaje",
             data: [
               bodyFat,
               boneMassPercentage,
