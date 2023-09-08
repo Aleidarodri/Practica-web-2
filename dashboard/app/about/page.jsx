@@ -1,7 +1,6 @@
 import { Noto_Serif, Outfit } from "next/font/google";
 import { Pacifico } from "next/font/google";
 
-const Noto = Noto_Serif({ subsets: ["latin"], weight: "400" });
 const outfit = Outfit({ subsets: ["latin"], weight: "300" });
 const pacifico = Pacifico({ subsets: ["latin"], weight: ["400"] });
 

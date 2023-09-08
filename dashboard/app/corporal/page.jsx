@@ -231,7 +231,7 @@ export default (About) => {
         </div>{" "}
         {/*button*/}
         <div className="flex flex-row justify-center gap-16">
-          {/*this div is for joining the table and the result table */}
+          {/* this div is for joining the table and the result table */}
           <div className="p-2 bg-tertiary w-72 mt-5 rounded-xl  h-auto">
             {console.log("Valores de porcentajes:", formData.density)}
             <p>Body density: {formData.density}</p>
