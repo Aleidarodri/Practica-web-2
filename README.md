@@ -4,6 +4,11 @@
  
  Última Actualizacion: Sep-2023
 
+## Deployment
+Pagina Muestra con Vercel:
+ - [Dashboard](https://practica-web-2-6y6z-git-main-aleidarodri.vercel.app/)
+ 
+
 ## Contenido
   - Resumen
   - Intalación
